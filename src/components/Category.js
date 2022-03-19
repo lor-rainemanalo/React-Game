@@ -24,7 +24,9 @@ export default function Category({ category, bgColor }) {
         <h2>{category}</h2>
         {/* <img alt="Category" /> */}
         <button onClick={handleCancel}>Spin again</button>
-        <button onClick={() => navigate("/trivia")}>Play</button>
+        {category === "General" && (
+          <button onClick={() => navigate("/general")}>Play</button>
+        )}
       </Rodal>
     </>
   );
