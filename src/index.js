@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import Components from "./Components";
+import Components from "./pages/Components";
 import reportWebVitals from "./reportWebVitals";
 import { TriviaProvider } from "./contexts/trivia";
 
