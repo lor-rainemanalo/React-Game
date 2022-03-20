@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { TriviaContext } from "../contexts/trivia";
-import Answer from "./Answer";
-//Question.js
-export default function Trivia() {
-  const [triviaState, dispatch] = useContext(TriviaContext);
+import { TechContext } from "../../contexts/techContext";
+import Answer from "../Answer";
+
+export default function Science() {
+  const [triviaState, dispatch] = useContext(TechContext);
   const currentTrivia = triviaState.trivias[triviaState.currentTriviaIndex];
 
   return (

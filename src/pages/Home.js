@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Rodal from "rodal";
 import Frame2 from "../components/images/Frame 2.png";
-
 import "rodal/lib/rodal.css";
 
 export default function Home() {
