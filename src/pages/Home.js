@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Rodal from "rodal";
+import Title from "../components/images/title.png";
 import Frame2 from "../components/images/Frame 2.png";
 
 import "rodal/lib/rodal.css";
@@ -17,24 +18,26 @@ export default function Home() {
       <table>
         <tr>
           <td style={{ width: "500px" }}>
-            <h1>Game Name</h1>
-            <button
-              className="startBtn"
-              onClick={() => {
-                navigate("/spin");
-              }}
-            >
-              START
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button
-              className="spinAgainBtn"
-              onClick={() => {
-                setIsModalVisible(true);
-              }}
-            >
-              How to Play
-            </button>
+            <img src={Title} alt="Title" width="480" />
+            <div style={{ margin: "0 0 15px 25px", textAlign: "left" }}>
+              <button
+                className="startBtn"
+                onClick={() => {
+                  navigate("/spin");
+                }}
+              >
+                START
+              </button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button
+                className="spinAgainBtn"
+                onClick={() => {
+                  setIsModalVisible(true);
+                }}
+              >
+                MENU
+              </button>
+            </div>
           </td>
           <td style={{ width: "500px" }}>
             <img src={Frame2} alt="Frame2" width="480" />

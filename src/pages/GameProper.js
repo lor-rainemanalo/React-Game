@@ -3,15 +3,16 @@ import { Wheel } from "react-custom-roulette";
 
 import Category from "../components/Category";
 import Header from "../components/Header";
+import Frame2 from "../components/images/Frame 2.png";
 
 const data = [
   {
-    option: "General",
-    style: { backgroundColor: "#6BE4FF", textColor: "#fff" },
+    option: " ",
+    style: { background: "#4967B4", textColor: "#fff" },
   }, //1st way of styling, below comment is the 2nd way
   {
     option: "Science",
-    style: { backgroundColor: "#5F3CA8", textColor: "#fff" },
+    style: { backgroundColor: "#4967B4", textColor: "#fff" },
   },
   {
     option: "History",
@@ -47,6 +48,9 @@ export default function GameProper() {
               mustStartSpinning={mustSpin}
               prizeNumber={prizeNumber}
               data={data}
+              outerBorderWidth={2}
+              radiusLineWidth={0}
+              outerBorderColor={"#393359"}
               // backgroundColors={["blue", "black", "teal", "pink", "green"]}
               // textColors={["red"]}
               onStopSpinning={handleSpinStop}
