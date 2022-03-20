@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Wheel } from "react-custom-roulette";
 import Category from "../components/Category";
 import Header from "../components/Header";
-import Frame2 from "../components/images/Frame 2.png";
+import Frame3 from "../components/images/Frame 3.png";
 
 const data = [
   {
@@ -59,22 +59,22 @@ export default function GameProper() {
           <button
             className="startBtn"
             onClick={handleSpinClick}
-            style={{ margin: "50px 0" }}
+            style={{ margin: "35px 0" }}
           >
             SPIN
           </button>
         </div>
         {!mustSpin && prizeNumber === 0 && (
-          <Category bgColor="green" category="General" />
+          <Category bgColor="#393359" category=" General" />
         )}
         {!mustSpin && prizeNumber === 1 && (
-          <Category bgColor="pink" category="Science" />
+          <Category bgColor="#393359" category=" Science" />
         )}
         {!mustSpin && prizeNumber === 2 && (
-          <Category bgColor="purple" category="History" />
+          <Category bgColor="#393359" category=" History" />
         )}
         {!mustSpin && prizeNumber === 3 && (
-          <Category bgColor="blue" category="Technology" />
+          <Category bgColor="#393359" category=" Technology" />
         )}
       </div>
     </>

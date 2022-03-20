@@ -20,21 +20,37 @@ export default function Category({ category, bgColor }) {
         closeMaskOnClick={false}
         customStyles={{ backgroundColor: bgColor }} //edit modal styles here
       >
-        <h2>{category}</h2>
+        <p className="categoryTxt">{category}</p>
         {/* <img alt="Category" /> */}
-        <button onClick={handleCancel}>Spin again</button>
-        {category === "General" && (
-          <button onClick={() => navigate("/general")}>Play</button>
-        )}
-        {category === "Science" && (
-          <button onClick={() => navigate("/science")}>Play</button>
-        )}
-        {category === "History" && (
-          <button onClick={() => navigate("/history")}>Play</button>
-        )}
-        {category === "Technology" && (
-          <button onClick={() => navigate("/technology")}>Play</button>
-        )}
+        <div style={{ textAlign: "center" }}>
+          <button className="spinAgainBtn" onClick={handleCancel}>
+            SPIN
+          </button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          {category === " General" && (
+            <button className="startBtn" onClick={() => navigate("/general")}>
+              PLAY
+            </button>
+          )}
+          {category === " Science" && (
+            <button className="startBtn" onClick={() => navigate("/science")}>
+              PLAY
+            </button>
+          )}
+          {category === " History" && (
+            <button className="startBtn" onClick={() => navigate("/history")}>
+              PLAY
+            </button>
+          )}
+          {category === " Technology" && (
+            <button
+              className="startBtn"
+              onClick={() => navigate("/technology")}
+            >
+              PLAY
+            </button>
+          )}
+        </div>
       </Rodal>
     </>
   );

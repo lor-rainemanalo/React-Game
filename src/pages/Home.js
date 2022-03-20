@@ -22,7 +22,7 @@ export default function Home() {
         <tr>
           <td style={{ width: "500px" }}>
             <img src={Title} alt="Title" width="480" />
-            <div style={{ margin: "0 0 15px 25px", textAlign: "left" }}>
+            <div style={{ margin: "40px 0 15px 15px", textAlign: "left" }}>
               <button
                 className="startBtn"
                 onClick={() => {

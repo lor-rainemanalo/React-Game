@@ -24,7 +24,8 @@ code {
 .categoryTxt,
 .choiceBtn,
 .choiceWrong,
-.choiceRight {
+.choiceRight,
+.resultTxt {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
 }
@@ -50,8 +51,11 @@ code {
 }
 
 .categoryTxt {
-  letter-spacing: 25px;
+  letter-spacing: 15px;
   color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
 }
 
 .spinAgainBtn,
@@ -113,10 +117,12 @@ button {
   );
   mix-blend-mode: lighten;
   border-radius: 50px;
-  width: 40%;
+  width: 50%;
   height: 30px;
   line-height: 30px;
   opacity: 65%;
+  margin: 10px;
+  font-size: 18px;
 }
 
 .choiceWrong {
@@ -128,10 +134,12 @@ button {
   );
   mix-blend-mode: lighten;
   border-radius: 50px;
-  width: 40%;
+  width: 50%;
   height: 30px;
   line-height: 30px;
   opacity: 65%;
+  margin: 10px;
+  font-size: 18px;
 }
 
 .choiceRight {
@@ -143,10 +151,12 @@ button {
   );
   mix-blend-mode: lighten;
   border-radius: 50px;
-  width: 40%;
+  width: 50%;
   height: 30px;
   line-height: 30px;
   opacity: 65%;
+  margin: 10px;
+  font-size: 18px;
 }
 
 .choiceDisabled {
@@ -164,22 +174,69 @@ button {
 .triviaNo {
   font-size: 40px;
 }
+
+.resultTxt {
+  background: linear-gradient(
+    180deg,
+    #ffffff 25.27%,
+    #e088ff 64.28%,
+    #4967b4 84.13%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 150px;
+  margin: 25px;
+}
 /*END OF TEXT*/
 
 .screen {
   height: 610px;
   text-align: center;
+  padding: 10px 25px;
+}
+
+nav {
+  margin-bottom: 65px;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  left: 10px;
+  top: 38px;
+  border-radius: 50px;
+  line-height: 45px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #25213a;
+  float: right;
+  margin: 7px;
+
+  background: radial-gradient(
+        48.46% 48.46% at 97.37% 88.65%,
+        #3f52ff 0%,
+        rgba(63, 82, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+      95.76% 95.76% at 12.18% 75.39%,
+      #ffffff 23.94%,
+      #ffcef1 41.01%,
+      #b6b9ff 67.49%,
+      #ffa8e7 86.12%,
+      #ffffff 100%
+    );
 }
 
 .triviaFrame {
-  position: absolute;
-  left: 5.21%;
-  right: 5.09%;
-  top: 22.56%;
-  bottom: 39.39%;
   width: 65%;
+  margin-top: 125px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 25px;
+  padding: 15px;
 
   background: rgba(255, 255, 255, 0.03);
   box-shadow: inset 0px 4.77893px 4.77893px rgba(255, 255, 255, 0.16),
@@ -187,6 +244,23 @@ button {
   backdrop-filter: blur(32.2578px);
   /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 51.2217px;
+  border-radius: 35.2217px;
   transform: rotate(0.35deg);
+}
+
+.resultMsg {
+  font-family: "Nunito", sans-serif;
+  font-style: bolder;
+  font-size: 60px;
+  text-transform: uppercase;
+  width: 875px;
+  background: linear-gradient(
+    180deg,
+    #c994ff 12.6%,
+    rgba(94, 207, 255, 0.6) 92.7%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 5px 0;
 }
