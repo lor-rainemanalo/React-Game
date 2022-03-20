@@ -148,6 +148,12 @@ button {
   line-height: 30px;
   opacity: 65%;
 }
+
+.choiceDisabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /*END OF BUTTONS*/
 
 /*TEXT*/

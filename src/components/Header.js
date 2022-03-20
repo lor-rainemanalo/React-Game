@@ -1,12 +1,17 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { TriviaContext } from "../contexts/trivia";
+import { TriviaContext } from "../contexts/generalContext";
 
 export default function Header() {
-  const [triviaState, dispatch] = useContext(TriviaContext);
+  const [dispatch] = useContext(TriviaContext);
+
+  const handleClick = () => {
+    dispatch({ type: "RESTART" });
+  };
+
   return (
     <nav>
-      <Link to="/" onClick={() => dispatch({ type: "RESTART" })}>
+      <Link to="/" onClick={handleClick}>
         Home
       </Link>
     </nav>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Wheel } from "react-custom-roulette";
-
 import Category from "../components/Category";
 import Header from "../components/Header";
 import Frame2 from "../components/images/Frame 2.png";

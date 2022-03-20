@@ -4,9 +4,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import GameProper from "./pages/GameProper";
-import GeneralTrivia from "./pages/GeneralTrivia";
-import Result from "./pages/Result";
 import ErrorPage from "./pages/ErrorPage";
+import GeneralTrivia from "./components/general/GeneralTrivia";
+import ScienceTrivia from "./components/science/ScienceTrivia";
+import HistoryTrivia from "./components/history/HistoryTrivia";
+import TechTrivia from "./components/technology/TechTrivia";
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/spin" element={<GameProper />} />
         <Route path="/general" element={<GeneralTrivia />} />
-        <Route path="/result" element={<Result />} />
+        <Route path="/science" element={<ScienceTrivia />} />
+        <Route path="/history" element={<HistoryTrivia />} />
+        <Route path="/technology" element={<TechTrivia />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

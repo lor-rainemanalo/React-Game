@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Rodal from "rodal";
 import { useNavigate } from "react-router-dom";
-
 import "rodal/lib/rodal.css";
 
 export default function Category({ category, bgColor }) {
@@ -26,6 +25,15 @@ export default function Category({ category, bgColor }) {
         <button onClick={handleCancel}>Spin again</button>
         {category === "General" && (
           <button onClick={() => navigate("/general")}>Play</button>
+        )}
+        {category === "Science" && (
+          <button onClick={() => navigate("/science")}>Play</button>
+        )}
+        {category === "History" && (
+          <button onClick={() => navigate("/history")}>Play</button>
+        )}
+        {category === "Technology" && (
+          <button onClick={() => navigate("/technology")}>Play</button>
         )}
       </Rodal>
     </>

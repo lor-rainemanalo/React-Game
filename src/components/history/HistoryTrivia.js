@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import Header from "../components/Header";
-import Trivia from "../components/Trivia";
-import Result from "../pages/Result";
-import { TriviaContext } from "../contexts/trivia";
-//Quiz.js
-export default function GeneralTrivia() {
-  const [triviaState, dispatch] = useContext(TriviaContext);
+import Header from "../Header";
+import Trivia from "./History";
+import Result from "./HistoryResult";
+import { HistoryContext } from "../../contexts/historyContext";
+
+export default function HistoryTrivia() {
+  const [triviaState, dispatch] = useContext(HistoryContext);
   console.log("triviastate", triviaState);
   return (
     <>

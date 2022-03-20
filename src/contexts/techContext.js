@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from "react";
 import { shuffleAnswers } from "../helpers";
-import trivias from "../trivias/general";
+import trivias from "../data/technology";
 
 const initialState = {
   trivias,
@@ -32,10 +32,16 @@ const reducer = (state, action) => {
         ? state.currentTriviaIndex
         : state.currentTriviaIndex + 1;
 
+      const answers = showResults
+        ? []
+        : shuffleAnswers(state.trivias[currentTriviaIndex]);
+
       return {
         ...state,
         currentTriviaIndex,
         showResults,
+        answers,
+        currentAnswer: "",
       };
     }
     case "RESTART": {
@@ -47,12 +53,10 @@ const reducer = (state, action) => {
   }
 };
 
-export const TriviaContext = createContext();
+export const TechContext = createContext();
 
-export const TriviaProvider = ({ children }) => {
+export const TechProvider = ({ children }) => {
   const value = useReducer(reducer, initialState);
 
-  return (
-    <TriviaContext.Provider value={value}>{children}</TriviaContext.Provider>
-  );
+  return <TechContext.Provider value={value}>{children}</TechContext.Provider>;
 };
