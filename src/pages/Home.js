@@ -4,6 +4,7 @@ import Rodal from "rodal";
 import Title from "../components/images/title.png";
 import Frame2 from "../components/images/Frame 2.png";
 import "rodal/lib/rodal.css";
+import Modal from "react-modal";
 
 export default function Home() {
   const [isModalVisible, setIsModalVisible] = useState(false);
