@@ -9,22 +9,29 @@ export default function ScienceTrivia() {
   console.log("triviastate", triviaState);
   return (
     <>
-      <Header />
-      {triviaState.showResults && <Result />}
-      {!triviaState.showResults && (
-        <div>
+      <div className="screen">
+        <Header />
+        {triviaState.showResults && <Result />}
+        {!triviaState.showResults && (
           <div>
-            Question {triviaState.currentTriviaIndex + 1} /{" "}
-            {triviaState.trivias.length}
-          </div>
-          <Trivia />
-          <div>
-            <button onClick={() => dispatch({ type: "NEXT_TRIVIA" })}>
-              Next trivia
+            <div className="triviaFrame">
+              <div className="triviaNo">
+                Question {triviaState.currentTriviaIndex + 1}
+              </div>
+              <div className="triviaTxt">
+                <Trivia />
+              </div>
+            </div>
+            <button
+              className="startBtn"
+              onClick={() => dispatch({ type: "NEXT_TRIVIA" })}
+            >
+              NEXT
             </button>
           </div>
-        </div>
-      )}
+        )}
+        <div></div>
+      </div>
     </>
   );
 }
