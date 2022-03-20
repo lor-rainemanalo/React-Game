@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { TechContext } from "../../contexts/techContext";
-import ResultImg from "../../components/images/Frame11.png";
+import ResultImg from "../../components/images/Frame 10.png";
 
 export default function ScienceResult() {
   const [triviaState, dispatch] = useContext(TechContext);
