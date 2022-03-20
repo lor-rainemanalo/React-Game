@@ -52,9 +52,11 @@ export default function Home() {
       </table>
 
       <Rodal visible={isModalVisible} onClose={handleCancel}>
-        <div>How to play ...</div>
-        <p>asdasad</p>
-        <p>sddsdfggdd</p>
+        <div>
+          <button>HOW TO PLAY</button>
+          <button>REFERENCE</button>
+          <button>QUIT</button>
+        </div>
       </Rodal>
     </div>
   );
