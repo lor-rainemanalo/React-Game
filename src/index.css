@@ -117,11 +117,11 @@ button {
   );
   mix-blend-mode: lighten;
   border-radius: 50px;
-  width: 50%;
+  width: 90%;
   height: 30px;
   line-height: 30px;
   opacity: 65%;
-  margin: 10px;
+  margin: 15px auto;
   font-size: 18px;
 }
 
@@ -134,11 +134,11 @@ button {
   );
   mix-blend-mode: lighten;
   border-radius: 50px;
-  width: 50%;
+  width: 90%;
   height: 30px;
   line-height: 30px;
   opacity: 65%;
-  margin: 10px;
+  margin: 15px auto;
   font-size: 18px;
 }
 
@@ -151,11 +151,11 @@ button {
   );
   mix-blend-mode: lighten;
   border-radius: 50px;
-  width: 50%;
+  width: 90%;
   height: 30px;
   line-height: 30px;
   opacity: 65%;
-  margin: 10px;
+  margin: 15px auto;
   font-size: 18px;
 }
 
@@ -237,6 +237,7 @@ nav {
   margin-right: auto;
   margin-bottom: 25px;
   padding: 15px;
+  justify-content: center;
 
   background: rgba(255, 255, 255, 0.03);
   box-shadow: inset 0px 4.77893px 4.77893px rgba(255, 255, 255, 0.16),
