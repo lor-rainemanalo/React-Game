@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { HistoryContext } from "../../contexts/historyContext";
+import ResultImg from "../../components/images/Frame 3.png";
 
 export default function Result() {
   const [triviaState, dispatch] = useContext(HistoryContext);
@@ -12,18 +13,33 @@ export default function Result() {
   };
 
   return (
-    <div>
-      {/* <img alt="Result" /> */}
+    <div
+      style={{
+        width: "950px",
+        textAlign: "center",
+      }}
+    >
       {triviaState.correctAnswerCount === triviaState.trivias.length ? (
-        <h1>You won!</h1>
+        <h1 className="resultMsg">You won!</h1>
       ) : (
-        <h1>Game over</h1>
+        <h1 className="resultMsg">Game over</h1>
       )}
-      <h2>you got</h2>
-      <h1>
-        {triviaState.correctAnswerCount} out of {triviaState.trivias.length}
-      </h1>
-      <button onClick={handleClick}>again</button>
+      <table>
+        <tr>
+          <td style={{ width: "500px" }}>
+            <img src={ResultImg} alt="Result" width="350" />
+          </td>
+          <td style={{ width: "450px" }}>
+            <h3 className="categoryTxt" style={{ margin: "0px" }}>
+              you got
+            </h3>
+            <h1 className="resultTxt">{triviaState.correctAnswerCount}</h1>
+            <button className="startBtn" onClick={handleClick}>
+              AGAIN
+            </button>
+          </td>
+        </tr>
+      </table>
     </div>
   );
 }
