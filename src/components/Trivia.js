@@ -15,6 +15,8 @@ export default function Trivia() {
             answerText={answer}
             key={index}
             index={index}
+            currentAnswer={triviaState.currentAnswer}
+            correctAnswer={currentTrivia.correctAnswer}
             onSelectAnswer={(answerText) =>
               dispatch({ type: "SELECT_ANSWER", payload: answerText })
             }

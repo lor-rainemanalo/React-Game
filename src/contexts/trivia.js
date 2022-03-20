@@ -32,10 +32,16 @@ const reducer = (state, action) => {
         ? state.currentTriviaIndex
         : state.currentTriviaIndex + 1;
 
+      const answers = showResults
+        ? []
+        : shuffleAnswers(state.trivias[currentTriviaIndex]);
+
       return {
         ...state,
         currentTriviaIndex,
         showResults,
+        answers,
+        currentAnswer: "",
       };
     }
     case "RESTART": {
