@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { HistoryContext } from "../../contexts/historyContext";
-import ResultImg from "../../components/images/Frame 3.png";
+import ResultImg from "../../components/images/Frame 5.png";
 
 export default function Result() {
   const [triviaState, dispatch] = useContext(HistoryContext);
@@ -20,9 +20,13 @@ export default function Result() {
       }}
     >
       {triviaState.correctAnswerCount === triviaState.trivias.length ? (
-        <h1 className="resultMsg">You won!</h1>
+        <h1 className="resultMsg animate__animated animate__tada animate__infinite">
+          You won!
+        </h1>
       ) : (
-        <h1 className="resultMsg">Game over</h1>
+        <h1 className="resultMsg animate__animated animate__flash animate__slower animate__infinite">
+          Game over
+        </h1>
       )}
       <table>
         <tr>

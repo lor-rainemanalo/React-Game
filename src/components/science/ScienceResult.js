@@ -20,9 +20,13 @@ export default function ScienceResult() {
       }}
     >
       {triviaState.correctAnswerCount === triviaState.trivias.length ? (
-        <h1 className="resultMsg">You won!</h1>
+        <h1 className="resultMsg animate__animated animate__tada animate__infinite">
+          You won!
+        </h1>
       ) : (
-        <h1 className="resultMsg">Game over</h1>
+        <h1 className="resultMsg animate__animated animate__flash animate__slower animate__infinite">
+          Game over
+        </h1>
       )}
       <table>
         <tr>
