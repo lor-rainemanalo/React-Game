@@ -26,7 +26,8 @@ code {
 .choiceBtn,
 .choiceWrong,
 .choiceRight,
-.resultTxt {
+.resultTxt,
+.resultMsg {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
 }
@@ -40,8 +41,8 @@ code {
 }
 
 .triviaNo {
+  font-size: 43px;
   text-transform: uppercase;
-
   background: linear-gradient(
     180deg,
     #ffffff 25.27%,
@@ -115,6 +116,13 @@ button {
   font-weight: bold;
 }
 
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
 .choiceBtn {
   background: linear-gradient(
     180deg,
@@ -130,13 +138,6 @@ button {
   opacity: 65%;
   margin: 15px auto;
   font-size: 18px;
-}
-
-.choices {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 10px;
 }
 
 .choiceRight {
@@ -228,10 +229,6 @@ button {
   padding-top: 15px;
 }
 
-.triviaNo {
-  font-size: 35px;
-}
-
 .resultTxt {
   background: linear-gradient(
     180deg,
@@ -270,13 +267,11 @@ nav {
   color: #25213a;
   float: right;
   margin: 7px;
-
   background: radial-gradient(
-        48.46% 48.46% at 97.37% 88.65%,
-        #3f52ff 0%,
-        rgba(63, 82, 255, 0) 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      48.46% 48.46% at 97.37% 88.65%,
+      #3f52ff 0%,
+      rgba(63, 82, 255, 0) 100%
+    ),
     radial-gradient(
       95.76% 95.76% at 12.18% 75.39%,
       #ffffff 23.94%,
@@ -300,14 +295,11 @@ nav {
   box-shadow: inset 0px 4.77893px 4.77893px rgba(255, 255, 255, 0.16),
     inset 0px 0px 38.2314px rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(32.2578px);
-  /* Note: backdrop-filter has minimal browser support */
-
   border-radius: 35.2217px;
   transform: rotate(0.35deg);
 }
 
 .resultMsg {
-  font-family: "Nunito", sans-serif;
   font-style: bolder;
   font-size: 60px;
   text-transform: uppercase;
@@ -320,7 +312,7 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin: 5px 0;
+  margin: auto 28px auto 0;
 }
 
 /*MENU BUTTONS*/
