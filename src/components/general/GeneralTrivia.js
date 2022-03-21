@@ -16,7 +16,7 @@ export default function GeneralTrivia() {
           <div>
             <div className="triviaFrame">
               <div className="triviaNo">
-                Question {triviaState.currentTriviaIndex + 1}
+                Trivia {triviaState.currentTriviaIndex + 1}
               </div>
               <div className="triviaTxt">
                 <Trivia />
