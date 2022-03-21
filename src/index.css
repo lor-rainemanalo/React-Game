@@ -20,6 +20,7 @@ code {
 
 /*HEADERS*/
 .startBtn,
+.playBtn,
 .triviaNo,
 .categoryTxt,
 .choiceBtn,
@@ -200,6 +201,23 @@ button {
 .choiceDisabled {
   cursor: not-allowed;
   pointer-events: none;
+}
+
+.playBtn {
+  font-size: larger;
+  background: linear-gradient(
+    180deg,
+    rgba(71, 255, 222, 0.46) 0%,
+    rgba(71, 255, 222, 0.58) 100%
+  );
+  mix-blend-mode: lighten;
+  border-radius: 50px;
+  width: 160px;
+  height: 35px;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 /*END OF BUTTONS*/
