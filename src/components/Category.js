@@ -25,7 +25,7 @@ export default function Category({ category, bgColor }) {
           <p className="categoryTxt">{category}</p>
           <img src={CategoryImg} alt="Category" width="140" />
         </center>
-        <div style={{ textAlign: "center", padding: "20px 0" }}>
+        <div style={{ textAlign: "center" }}>
           <button
             className="spinAgainBtn"
             onClick={handleCancel}
