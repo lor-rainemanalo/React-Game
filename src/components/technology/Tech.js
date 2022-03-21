@@ -9,7 +9,7 @@ export default function Science() {
   return (
     <div>
       <div>{currentTrivia.trivia}</div>
-      <div>
+      <div className="choices">
         {triviaState.answers.map((answer, index) => (
           <Answer
             answerText={answer}
