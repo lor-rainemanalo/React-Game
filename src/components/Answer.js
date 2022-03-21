@@ -16,14 +16,12 @@ export default function Answer({
   const disabledClass = currentAnswer ? "choiceDisabled" : "";
 
   return (
-    <div>
-      <div
-        className={`choiceBtn ${correctAnswerClass} ${wrongAnswerClass} ${disabledClass}`}
-        onClick={() => onSelectAnswer(answerText)}
-      >
-        {/* <div>{letterMapping[index]}</div> */}
-        <div>{answerText}</div>
-      </div>
+    <div
+      className={`choiceBtn ${correctAnswerClass} ${wrongAnswerClass} ${disabledClass}`}
+      onClick={() => onSelectAnswer(answerText)}
+    >
+      {/* <div>{letterMapping[index]}</div> */}
+      <div>{answerText}</div>
     </div>
   );
 }
