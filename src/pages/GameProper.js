@@ -6,20 +6,28 @@ import Frame3 from "../components/images/Frame 3.png";
 
 const data = [
   {
-    option: " ",
-    style: { background: "#4967B4", textColor: "#fff" },
-  }, //1st way of styling, below comment is the 2nd way
-  {
-    option: "Science",
-    style: { backgroundColor: "#4967B4", textColor: "#fff" },
+    option: "🔥",
   },
   {
-    option: "History",
-    style: { backgroundColor: "#4967B4", textColor: "#fff" },
+    option: "🔬",
   },
   {
-    option: "Technology",
-    style: { backgroundColor: "#E088FF", textColor: "#fff" },
+    option: "💂🏻‍♂️",
+  },
+  {
+    option: "💻",
+  },
+  {
+    option: "⭐",
+  },
+  {
+    option: "🧪",
+  },
+  {
+    option: "📚",
+  },
+  {
+    option: "📱",
   },
 ];
 
@@ -47,12 +55,14 @@ export default function GameProper() {
               mustStartSpinning={mustSpin}
               prizeNumber={prizeNumber}
               data={data}
-              outerBorderWidth={2}
-              radiusLineWidth={0}
+              outerBorderWidth={5}
               outerBorderColor={"#393359"}
-              // backgroundColors={["blue", "black", "teal", "pink", "green"]}
-              // textColors={["red"]}
+              radiusLineWidth={5}
+              radiusLineColor={"#393359"}
+              backgroundColors={["#bfb8da", "#e8b7d4", "#a5678e", "#7facd6"]}
               onStopSpinning={handleSpinStop}
+              fontSize={30}
+              perpendicularText={true}
             />
           </center>
 
@@ -74,6 +84,18 @@ export default function GameProper() {
           <Category bgColor="#393359" category=" History" />
         )}
         {!mustSpin && prizeNumber === 3 && (
+          <Category bgColor="#393359" category=" Technology" />
+        )}
+        {!mustSpin && prizeNumber === 4 && (
+          <Category bgColor="#393359" category=" General" />
+        )}
+        {!mustSpin && prizeNumber === 5 && (
+          <Category bgColor="#393359" category=" Science" />
+        )}
+        {!mustSpin && prizeNumber === 6 && (
+          <Category bgColor="#393359" category=" History" />
+        )}
+        {!mustSpin && prizeNumber === 7 && (
           <Category bgColor="#393359" category=" Technology" />
         )}
       </div>

@@ -117,7 +117,7 @@ button {
   );
   mix-blend-mode: lighten;
   border-radius: 50px;
-  width: 50%;
+  width: 45%;
   height: 30px;
   line-height: 30px;
   opacity: 65%;
@@ -129,7 +129,26 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 30px;
+}
+
+.choiceRight {
+  background: linear-gradient(
+    180deg,
+    #00f0ff 0%,
+    rgba(0, 255, 240, 0.22) 51.56%,
+    rgba(0, 255, 240, 0.5) 100%
+  );
+  mix-blend-mode: lighten;
+  border-radius: 50px;
+  width: 45%;
+  height: 30px;
+  line-height: 30px;
+  opacity: 65%;
+  margin: 15px auto;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .choiceWrong {
@@ -141,13 +160,16 @@ button {
   );
   mix-blend-mode: lighten;
   border-radius: 50px;
-  width: 90%;
+  width: 45%;
   height: 30px;
   line-height: 30px;
   opacity: 65%;
   margin: 15px auto;
   font-size: 18px;
   animation: horizontal-shaking 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @keyframes horizontal-shaking {
@@ -166,23 +188,6 @@ button {
   100% {
     transform: translateX(0);
   }
-}
-
-.choiceRight {
-  background: linear-gradient(
-    180deg,
-    #00f0ff 0%,
-    rgba(0, 255, 240, 0.22) 51.56%,
-    rgba(0, 255, 240, 0.5) 100%
-  );
-  mix-blend-mode: lighten;
-  border-radius: 50px;
-  width: 90%;
-  height: 30px;
-  line-height: 30px;
-  opacity: 65%;
-  margin: 15px auto;
-  font-size: 18px;
 }
 
 .choiceDisabled {
