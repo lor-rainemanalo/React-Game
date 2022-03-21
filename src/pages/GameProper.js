@@ -61,7 +61,7 @@ export default function GameProper() {
               radiusLineColor={"#393359"}
               backgroundColors={["#bfb8da", "#e8b7d4", "#a5678e", "#7facd6"]}
               onStopSpinning={handleSpinStop}
-              fontSize={30}
+              fontSize={50}
               perpendicularText={true}
             />
           </center>

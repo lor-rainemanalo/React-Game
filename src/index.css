@@ -30,7 +30,6 @@ code {
   font-weight: 900;
 }
 
-.startBtn,
 .choiceBtn,
 .choiceWrong,
 .choiceRight {
@@ -76,6 +75,10 @@ button {
 
 /*BUTTONS*/
 .startBtn {
+  font-size: larger;
+  color: #ffffff;
+  mix-blend-mode: lighten;
+  opacity: 0.75;
   background: linear-gradient(
     180deg,
     #ff96db 0%,
@@ -84,13 +87,14 @@ button {
   );
   mix-blend-mode: lighten;
   border-radius: 50px;
-  width: 120px;
-  height: 30px;
+  width: 135px;
+  height: 35px;
   line-height: 30px;
   margin-bottom: 15px;
 }
 
 .spinAgainBtn {
+  font-size: larger;
   background: linear-gradient(
     180deg,
     rgba(201, 201, 201, 0.75) 0%,
@@ -99,10 +103,9 @@ button {
   );
   mix-blend-mode: lighten;
   border-radius: 50px;
-  width: 120px;
-  height: 30px;
+  width: 135px;
+  height: 35px;
   line-height: 30px;
-  font-size: 13px;
   opacity: 70%;
   letter-spacing: 1.2px;
   font-weight: bold;
@@ -118,8 +121,8 @@ button {
   mix-blend-mode: lighten;
   border-radius: 50px;
   width: 45%;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
   opacity: 65%;
   margin: 15px auto;
   font-size: 18px;
@@ -129,6 +132,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .choiceRight {
@@ -141,8 +145,8 @@ button {
   mix-blend-mode: lighten;
   border-radius: 50px;
   width: 45%;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
   opacity: 65%;
   margin: 15px auto;
   font-size: 18px;
@@ -161,8 +165,8 @@ button {
   mix-blend-mode: lighten;
   border-radius: 50px;
   width: 45%;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
   opacity: 65%;
   margin: 15px auto;
   font-size: 18px;
@@ -199,11 +203,12 @@ button {
 
 /*TEXT*/
 .triviaTxt {
-  font-size: 25px;
+  font-size: 22px;
+  padding-top: 15px;
 }
 
 .triviaNo {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .resultTxt {
