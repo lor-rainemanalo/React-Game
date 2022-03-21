@@ -27,7 +27,8 @@ code {
 .choiceWrong,
 .choiceRight,
 .resultTxt,
-.resultMsg {
+.resultMsg,
+.rulesTxt {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
 }
@@ -241,6 +242,13 @@ button {
   background-clip: text;
   font-size: 150px;
   margin: 25px;
+}
+
+.rulesTxt {
+  font-size: 14px;
+  margin: 0 0 3px 0;
+  color: #ffffff;
+  text-align: justify;
 }
 /*END OF TEXT*/
 

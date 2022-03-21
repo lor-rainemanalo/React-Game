@@ -15,7 +15,7 @@ export default function Header() {
       <Link to="/" onClick={handleClick} style={{ float: "left" }}>
         <img src={Title} alt="Title" height="65" />
       </Link>
-      <button className="icon">RR</button>
+      <button className="icon">LN</button>
     </nav>
   );
 }

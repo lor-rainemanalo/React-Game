@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Rodal from "rodal";
 import Title from "../components/images/title.png";
 import Frame2 from "../components/images/Frame 2.png";
+import Rules from "../components/images/rules.png";
 import "rodal/lib/rodal.css";
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
                     setIsModalVisible(true);
                   }}
                 >
-                  MENU
+                  RULES
                 </button>
               </div>
             </td>
@@ -50,17 +51,35 @@ export default function Home() {
         visible={isModalVisible}
         onClose={handleCancel}
         customStyles={{
-          backgroundColor: "rgba(255, 255, 255, 0.1)",
+          backgroundColor: "#393359",
           boxShadow:
             "inset 0px 5.67258px 5.67258px rgba(255, 255, 255, 0.16), inset 0px 0px 45.3806px rgba(255, 255, 255, 0.08)",
           borderRadius: "20px",
-          padding: "55px 35px",
+          padding: "15px 35px",
         }}
       >
         <div>
-          <button className="menuBtn howToPlay">HOW TO PLAY</button>
-          <button className="menuBtn references">REFERENCE</button>
-          <button className="menuBtn quit">QUIT (???)</button>
+          <p style={{ margin: "0" }}>
+            <img src={Rules} alt="Rules" width="145" />
+          </p>
+          <br />
+          <p className="rulesTxt">① Spin for a category.</p>
+          <p className="rulesTxt">
+            ② Click PLAY to proceed or SPIN AGAIN if so desired.
+          </p>
+          <p className="rulesTxt">
+            ③ Try to answer the trivias displayed correctly.
+          </p>
+          <p className="rulesTxt">
+            ④ The game is over once all trivias have been answered.
+          </p>
+          <p className="rulesTxt">
+            ⑤ View the results! Go again if so desired.
+          </p>
+          <br />
+          <button className="startBtn" onClick={handleCancel}>
+            OK
+          </button>
         </div>
       </Rodal>
     </div>
