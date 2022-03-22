@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import confetti from "canvas-confetti";
 import { TriviaContext } from "../../contexts/generalContext";
 import ResultImg from "../../components/images/Frame11.png";
-
 export default function Result() {
   const [triviaState, dispatch] = useContext(TriviaContext);
   const navigate = useNavigate();
@@ -12,6 +12,10 @@ export default function Result() {
     navigate("/spin");
   };
 
+  var end = Date.now() + 3 * 1000;
+
+  var colors = ["#e088ff", "#ffffff"];
+
   return (
     <div
       style={{
@@ -20,7 +24,29 @@ export default function Result() {
       }}
     >
       {triviaState.correctAnswerCount === triviaState.trivias.length ? (
-          <h1 className="resultMsg animate__animated animate__tada animate__infinite">
+        <h1
+          className="resultMsg animate__animated animate__tada animate__infinite"
+          onLoad={(function frame() {
+            confetti({
+              particleCount: 2,
+              angle: 40,
+              spread: 55,
+              origin: { x: 0.2 },
+              colors: colors,
+            });
+            confetti({
+              particleCount: 2,
+              angle: 140,
+              spread: 55,
+              origin: { x: 0.8 },
+              colors: colors,
+            });
+
+            if (Date.now() < end) {
+              requestAnimationFrame(frame);
+            }
+          })()}
+        >
           You won!
         </h1>
       ) : (
