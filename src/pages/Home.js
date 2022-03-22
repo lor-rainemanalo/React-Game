@@ -52,17 +52,15 @@ export default function Home() {
         onClose={handleCancel}
         customStyles={{
           backgroundColor: "#393359",
-          boxShadow:
-            "inset 0px 5.67258px 5.67258px rgba(255, 255, 255, 0.16), inset 0px 0px 45.3806px rgba(255, 255, 255, 0.08)",
           borderRadius: "20px",
           padding: "15px 35px",
         }}
+        height={290}
       >
         <div>
-          <p style={{ margin: "0" }}>
+          <p style={{ margin: "0 0 5px 0" }}>
             <img src={Rules} alt="Rules" width="145" />
           </p>
-          <br />
           <p className="rulesTxt">① Spin for a category.</p>
           <p className="rulesTxt">
             ② Click PLAY to proceed or SPIN AGAIN if so desired.
@@ -71,11 +69,15 @@ export default function Home() {
             ③ Try to answer the trivias displayed correctly.
           </p>
           <p className="rulesTxt">
-            ④ The game is over once all trivias have been answered.
+            ④ The game ends once all trivias have been answered.
           </p>
           <p className="rulesTxt">
             ⑤ View the results! Go again if so desired.
           </p>
+          <p className="rulesTxt">
+            ⑥ YOU WIN if all trivias are answered correctly.
+          </p>
+          <p className="rulesTxt">⑦ Otherwise, GAME OVER and you lose.</p>
           <br />
           <button className="startBtn" onClick={handleCancel}>
             OK

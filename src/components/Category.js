@@ -19,7 +19,12 @@ export default function Category({ category, bgColor }) {
         onClose={handleCancel}
         showCloseButton={false}
         closeMaskOnClick={false}
-        customStyles={{ backgroundColor: bgColor }} //edit modal styles here
+        //edit modal styles here
+        customStyles={{
+          backgroundColor: "#393359",
+          borderRadius: "20px",
+          padding: "15px 35px",
+        }}
       >
         <center>
           <p className="categoryTxt">{category}</p>
