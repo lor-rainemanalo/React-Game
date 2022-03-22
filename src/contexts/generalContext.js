@@ -12,7 +12,6 @@ const initialState = {
 };
 
 const reducer = (state, action) => {
-  console.log("reducer", state, action);
   switch (action.type) {
     case "SELECT_ANSWER": {
       const correctAnswerCount =

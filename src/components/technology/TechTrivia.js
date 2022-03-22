@@ -6,7 +6,7 @@ import Result from "./TechResult";
 
 export default function ScienceTrivia() {
   const [triviaState, dispatch] = useContext(TechContext);
-  console.log("triviastate", triviaState);
+
   return (
     <>
       <div className="screen">

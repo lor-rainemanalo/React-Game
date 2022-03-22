@@ -6,7 +6,7 @@ import { TriviaContext } from "../../contexts/generalContext";
 
 export default function GeneralTrivia() {
   const [triviaState, dispatch] = useContext(TriviaContext);
-  console.log("triviastate", triviaState);
+
   return (
     <>
       <div className="screen">

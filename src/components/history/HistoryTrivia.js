@@ -6,7 +6,7 @@ import { HistoryContext } from "../../contexts/historyContext";
 
 export default function HistoryTrivia() {
   const [triviaState, dispatch] = useContext(HistoryContext);
-  console.log("triviastate", triviaState);
+
   return (
     <>
       <div className="screen">
