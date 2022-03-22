@@ -294,6 +294,13 @@ nav {
     );
 }
 
+.audio-img {
+  width: 45px;
+  height: 45px;
+  margin: 0 20px 10px 20px;
+  cursor: pointer;
+}
+
 .triviaFrame {
   width: 65%;
   margin-top: 125px;
