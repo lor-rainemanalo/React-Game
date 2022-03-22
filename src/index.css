@@ -76,6 +76,7 @@ code {
 button {
   padding: 0px;
   border-width: 0.3px;
+  cursor: pointer;
 }
 /*End of Button Override*/
 
@@ -139,6 +140,7 @@ button {
   opacity: 65%;
   margin: 15px auto;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .choiceRight {
@@ -275,6 +277,8 @@ nav {
   color: #25213a;
   float: right;
   margin: 7px;
+  cursor: not-allowed;
+  pointer-events: none;
   background: radial-gradient(
       48.46% 48.46% at 97.37% 88.65%,
       #3f52ff 0%,
